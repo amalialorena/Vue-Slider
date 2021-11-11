@@ -3,6 +3,7 @@ var carousel = new Vue (
     el: "#carousel",
 
     data: {
+        slidesIndex: 0,
         slides: [
             {
             image: 'img/01.jpg',
