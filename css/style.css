@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.container-thumbs img {
+.thumb img {
     opacity: .5;
 }
 
@@ -57,8 +57,8 @@
 }
 
 
-.container-thumbs .active {
-    border: 2px solid white;
+.thumb.active img {
+    border: 2px solid yellow;
     opacity: 1;
 }
 

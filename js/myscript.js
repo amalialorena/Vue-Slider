@@ -36,12 +36,28 @@ var carousel = new Vue (
 
     },
 
+    methods: {
+        nextSlide: function() {
+            if(this.slidesIndex === this.slides.length -1){
+                this.slidesIndex = 0
+            }else{
+                this.slidesIndex++
+            }   
+        },
+        prevSlide: function() {
+            if(this.slidesIndex === 0){
+                this.slidesIndex = this.slides.length -1
+            }else{
+                this.slidesIndex--
+            } 
+        }
+    }
 });
 
 
 
 
-
+// :class="i === slidesIndex ? 'active : '' "
 
 //Rifare l’esercizio dello slider come fatto assieme in classe.
 //Quindi farlo funzionare con Vue, nel modo del framework.
